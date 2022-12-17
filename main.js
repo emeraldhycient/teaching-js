@@ -105,6 +105,14 @@ if (name === "vite") {
 }
 
 
+//ternary operators 
+const isvite = name === "vite" ? true : false
+
+console.log("isvite", isvite)
+
+
+
+
 const isATool = false;
 
 // or 
@@ -121,9 +129,69 @@ if (name === "vite" && isATool) {
   console.log("one of the conditions failed")
 }
 
+
 // loops
+
 // for 
 // foreach 
 // while 
 // map 
+//filter
+//find
 // do while
+
+const age = 27;
+
+// first part is define your variable ,second part check a certain condition, 
+// third  perform action on the previous variable
+
+for (let patience_age = 22; patience_age <= age; patience_age++) {
+  console.log("patience_age", patience_age)
+}
+
+const bag = ["rice", "spaghetti", "noodles", "beans"]
+// second way of defining an array
+const newArray = new Array("rice", "spaghetti", "noodles", "beans")
+
+// define the iterator and then pass the keyword "in" and then ur array|object
+for (let item in bag) {
+  console.log(bag[item])
+}
+
+
+//foreach
+
+// array.forEach(element => {
+
+// });
+
+
+// foreach loop is a javascript array loop.that accepts a function and passes the result of each 
+//loop to the function as parameter
+newArray.forEach(function (item) {
+  console.log("foreach item", item)
+})
+
+
+// while 
+
+
+let range = 30;
+
+while (range > age) {
+  range--
+  console.log(range)
+}
+
+
+const istvplugged = false
+
+// do while loop performs an action first before checking the conditions
+do {
+  console.log("move tv")
+} while (istvplugged);
+
+
+// functions
+// callbacks
+// callback hell

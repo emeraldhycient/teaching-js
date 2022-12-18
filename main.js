@@ -220,7 +220,7 @@ function functionWithArgument(message, issue) {
 }
 
 //function invocation
-functionWithArgument("patience is here oo", "na them")
+// functionWithArgument("patience is here oo", "na them")
 
 
 // functionWithArgument("hycient is here", "")
@@ -272,3 +272,31 @@ printSubjects()
 
 //callback function are functions passed into another function as a n argument
 
+const callbackExample = (firstname, lastname, callback) => {
+  callback(firstname)
+}
+
+callbackExample("hycient", "ibok", (name) => { console.log(name) })
+
+
+//dom manipulation
+//event listeners
+
+const app = document.getElementById("app")
+
+app.style.color = "green"
+app.style.fontSize = "0.3em"
+
+
+const input1 = document.getElementById("inputemail");
+
+input1.addEventListener("keyup", () => {
+  console.log(input1.value)
+  if (input1.value.length < 9) {
+    input1.style.borderWidth = 2
+    input1.style.borderColor = "red"
+  } else {
+    input1.style.borderWidth = 2
+    input1.style.borderColor = "green"
+  }
+})

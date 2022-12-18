@@ -195,3 +195,80 @@ do {
 // functions
 // callbacks
 // callback hell
+
+// a function is a reusable piece of code that is defined by using the keyword "function",
+//it may or maynot have any arguments
+
+// what is an argument 
+// an argument is  a piece or pieces of data that is passed to a function
+
+//1
+
+function shoutYee() {
+  alert("yeeeeeeeeeh 💦")
+}
+
+//function invocation
+// shoutYee()
+
+function functionWithArgument(message, issue) {
+  const eleme = document.getElementById("app");
+  // console.log(eleme)
+  eleme.innerHTML = `<h1>${message}</h1>`
+  eleme.innerHTML += `<h1>${issue}</h1>`
+
+}
+
+//function invocation
+functionWithArgument("patience is here oo", "na them")
+
+
+// functionWithArgument("hycient is here", "")
+
+//arrow function , anonymous function (slight differnce but close similarity due to dy both dont have names)
+
+const anonymous = function (x, y, operation) {
+  if (operation === "add") {
+    return x + y;
+  } else if (operation === "minus") {
+    return x - y;
+  } else if (operation === "mul") {
+    return x * y
+  } else {
+    return { x, y }
+  }
+}
+
+console.log(anonymous(34, 23, "add"))
+
+
+// arrow functions
+
+const arrowfn = (x, y, operation) => {
+  if (operation === "add") {
+    return x + y;
+  } else if (operation === "minus") {
+    return x - y;
+  } else if (operation === "mul") {
+    return x * y
+  } else {
+    return { x, y }
+  }
+}
+
+
+console.log(arrowfn(2, 3, ""))
+
+
+
+const printSubjects = () => {
+  student.subjects.forEach((subject) => {
+    console.log(subject)
+  })
+}
+
+printSubjects()
+
+
+//callback function are functions passed into another function as a n argument
+

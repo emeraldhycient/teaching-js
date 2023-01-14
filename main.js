@@ -300,3 +300,112 @@ input1.addEventListener("keyup", () => {
     input1.style.borderColor = "green"
   }
 })
+
+
+
+
+
+
+/////////   reviews revison
+
+// where you define the var, conditions and actions
+for (let i = 0; i < 23; i++) {
+  console.log(i)
+}
+
+// using for loop to iterate over an array
+
+const bagx = ["rice", "spaghetti", "noodles", "beans"]
+
+for (let item in bagx) {
+  console.log(bagx[item])
+}
+
+
+do {
+  console.log("e don happen")
+} while (45 < 6);
+
+
+let num = 15;
+
+while (num < 20) {
+  console.log(num)
+  num++
+}
+
+// using while loop to loop over an array 
+
+const lengthOfBagx = bagx.length;
+let iterator = 0;
+
+while (iterator < lengthOfBagx) {
+  console.log(bagx[iterator])
+  iterator++
+}
+
+
+//functions 
+
+function outputnames() {
+
+}
+
+// arrow function
+const printnames = () => {
+
+}
+
+const anonymousfun = function () {
+
+}
+
+
+// when a function takes another function as parameter its called a callback function
+
+const receivescallback = (callbackExcample) => {
+
+  callbackExcample("name")
+}
+
+
+const the_received_function = (name) => {
+  console.log(name)
+}
+
+receivescallback(the_received_function)
+
+// receivescallback((name) => { console.log(name) })
+
+
+// revison ends 
+
+
+//map 
+
+
+const iterables = ["rice", "spaghetti", "noodles", "beans"]
+
+iterables.map(function (val, index) {
+  console.log(`value  ${val} and index $`)
+})
+
+
+const filtered = iterables.filter((val, index) => {
+  return val === "noodles"
+})
+
+
+console.log(filtered)
+
+
+//assigment operators
+//https://www.w3schools.com/js/js_operators.asp
+
+// = means assign 
+// == if its same but do not check the data type 
+// === check if its same and also check the data type
+// != if its not equal to that value
+// !== if its not equal to that value and also to the type 
+// > greater than 
+// < means less than 
